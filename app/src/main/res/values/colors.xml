@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/bg_chip_state</color>
+    <color name="colorPrimaryDark">#8B423B3B</color>
+    <color name="colorAccent">#E4D4D8</color>
+</resources>

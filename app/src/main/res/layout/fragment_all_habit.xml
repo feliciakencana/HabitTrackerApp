@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgroundmain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="670dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="65dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="All goals"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="2dp">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup_daysView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll_sunday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_horizontal"
+                        android:text="@string/Sunday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll_monday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_horizontal"
+                        android:text="@string/Monday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll_tuesday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Tuesday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll_wednesday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Wednesday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll_thursday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Tuesday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll_friday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Friday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll_saturday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Sunday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </HorizontalScrollView>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="40dp"
+                android:scrollbars="none">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    tools:listitem="@layout/habit_item">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#121f28"
+        app:fabCradleMargin="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/imgButton_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0"
+                android:background="#00000000"
+                android:padding="5dp"
+                app:srcCompat="@drawable/todayicon" />
+
+            <ImageButton
+                android:id="@+id/btn_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0"
+                android:background="#00000000"
+                android:padding="15dp"
+                app:srcCompat="@drawable/allicon" />
+        </LinearLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="auto"
+        app:backgroundTint="#c26340"
+        app:elevation="0dp"
+        app:fabCustomSize="65dp"
+        app:fabSize="auto"
+        app:layout_anchor="@id/bottomAppBar"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

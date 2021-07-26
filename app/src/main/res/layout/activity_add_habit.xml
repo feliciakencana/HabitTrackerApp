@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHabit"
+    android:background="@drawable/backgroundadd">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                app:srcCompat="@drawable/backarrows" />
+
+            <TextView
+                android:id="@+id/title_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Add new habit"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/roboto"
+                android:text="Name"
+                android:textColor="#eeeeee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:ems="15"
+                android:fontFamily="@font/roboto"
+                android:hint="Please type habit name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/roboto"
+                android:text="Days"
+                android:textColor="#eeeeee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="7dp"
+                    app:singleLine="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_sunday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_horizontal"
+                        android:text="@string/Sunday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_monday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_horizontal"
+                        android:text="@string/Monday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_tuesday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Tuesday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_wednesday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Wednesday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_thursday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Tuesday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_friday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Friday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_saturday"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Sunday"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/ChipGroup" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            <TextView
+                android:id="@+id/textView_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/roboto"
+                android:text="Choose habit type"
+                android:textColor="#eeeeee"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Time-based habit" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Goal-based habit" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="Time"
+                android:textColor="#eeeeee"
+                android:fontFamily="@font/roboto"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+
+                <EditText
+                    android:id="@+id/editText_durationVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="0"
+                    android:ems="2"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/addhabit_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/spinner_list" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="25dp"
+                android:text="Goal"
+                android:textColor="#eeeeee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editText_goalValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="0"
+                    android:ems="5"
+                    android:fontFamily="@font/roboto"
+                    android:hint="goal value"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editText_goalUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="0"
+                    android:autofillHints="specify unit"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto"
+                    android:hint="input goal unit"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Reminder"
+                    android:textColor="#eeeeee"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Switch
+                    android:id="@+id/switch_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0" />
+
+            </LinearLayout>
+-->
+          <!--  <TextView
+                android:id="@+id/textView_timeBegin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/roboto"
+                android:text="+ Add reminder time"
+                android:textSize="20sp"
+                android:visibility="gone"/>-->
+
+            <ImageButton
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="40dp"
+                android:background="@null"
+                android:src="@drawable/savebutton" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

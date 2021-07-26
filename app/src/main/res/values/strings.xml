@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NewHabitTracker</string>
+    <string name="today_habit">Today Habit</string>
+    <string name="new_habit">New Habit</string>
+    <string name="all_habit">All Habit</string>
+    <string name="Sunday">S</string>
+    <string name="Monday">M</string>
+    <string name="Tuesday">T</string>
+    <string name="Wednesday">W</string>
+    <string name="Friday">F</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinner_list">
+        <item>Hour</item>
+        <item>Minute</item>
+    </string-array>
+</resources>
+
+

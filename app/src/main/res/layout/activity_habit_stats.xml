@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundadd"
+    tools:context=".HabitStatsActivities">
+
+   <!-- <Data>
+        <variable>
+            name="viewModel"
+            type="com.example.newhabittracker.Database.HabitItemViewModel
+        </variable>
+    </Data>-->
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+
+      <ImageButton
+          android:id="@+id/btn_return"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+          android:layout_marginTop="30dp"
+          android:background="@null"
+          app:srcCompat="@drawable/backarrows" />
+
+      <TextView
+          android:id="@+id/txtView_statsTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+          android:layout_marginTop="40dp"
+          android:fontFamily="@font/roboto_medium"
+          android:gravity="center_horizontal"
+          android:text="List of Habits"
+          android:textAlignment="center"
+          android:textSize="20sp" />
+
+   </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerViewStats"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="100dp"
+       android:layout_gravity="center">
+
+   </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

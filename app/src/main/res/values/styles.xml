@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#952B2B</item>
+        <item name="colorPrimaryDark">#8B3E0B78</item>
+        <item name="colorAccent">#CFC3C6</item>
+    </style>
+
+    <style name="ChipGroup" >
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+</resources>
